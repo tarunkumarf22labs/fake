@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "shopclipsremixpart2"
+client_id = "401653564582bbb50aa3f3b6a86ea601"
+application_url = "https://mark-purpose-framed-nut.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://mark-purpose-framed-nut.trycloudflare.com/auth/callback",
+  "https://mark-purpose-framed-nut.trycloudflare.com/auth/shopify/callback",
+  "https://mark-purpose-framed-nut.trycloudflare.com/api/auth/callback",
+  "https://mark-purpose-framed-nut.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "f22clips.myshopify.com"
